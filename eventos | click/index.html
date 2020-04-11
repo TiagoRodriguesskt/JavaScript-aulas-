@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=500, initial-scale=1.0">
+    <title>Enventos | Click</title>
+</head>
+
+<body>
+    <div>
+        <h1>Botão</h1>
+        <button id="click">Clque</button>
+    </div>
+    <script>
+        var btn = document.getElementById('click')
+
+        btn.addEventListener('click', function(event) {
+            alert('Clicou')
+            console.log(btn.innerHTML)
+        })
+
+        //Função de remove ou adicionar um evento 
+        // var btn = document.getElementById('click')
+        // var title = document.getElementById('title')
+
+        // btn.addEventListener('click', function(event) {
+        //    title.remove()
+        // })
+
+        var btn = document.getElementById('click')
+
+        btn.addEventListener('click', function(event) {
+            var data = new Date();
+            alert(data.toString());
+        });
+    </script>
+</body>
+
+</html>

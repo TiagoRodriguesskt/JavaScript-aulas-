@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=500, initial-scale=1.0">
+    <title>jQuery | Delay</title>
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+            width: 100%;
+            height: 70px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+        }
+        
+        li {
+            margin-left: 20px;
+            text-transform: uppercase;
+        }
+        
+        a {
+            color: #fff;
+            padding: 25px 20px;
+        }
+        
+        a:hover,
+        a:active {
+            background-color: chartreuse;
+            color: #000;
+        }
+    </style>
+</head>
+<!--EFEITOS DE LINK-->
+
+<body>
+    <ul>
+        <li class="link active">
+            <a href="#">home</a>
+        </li>
+        <li class="link">
+            <a href="#">empresa</a>
+        </li>
+        <li class="link">
+            <a href="#">projeto</a>
+        </li>
+        <li class="link">
+            <a href="#">contato</a>
+        </li>
+
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous" <script>
+    </script>
+    <script>
+        var link = $('.link')
+
+        link.on('click', function() {
+            link.removeClass('active')
+            $(this).addClass('active')
+        })
+    </script>
+</body>
+
+</html>

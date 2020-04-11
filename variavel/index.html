@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=500, initial-scale=1.0">
+    <title>Variavel</title>
+</head>
+
+<body>
+    <!--
+        Escopo global
+        Escopo local
+        Constante
+    -->
+    <script>
+        //Global
+        var nome = 'Tiago'
+
+        function teste() {
+            //nome = 'Rodrigues'
+        }
+        teste()
+        console.log(nome)
+
+        //Local
+        function teste1() {
+            let nome = 'Chaves'
+            console.log(nome)
+        }
+        teste1()
+
+        const nome1 = 'Gonçalves'
+
+        console.log(nome1)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=500, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+
+<body>
+
+    <script>
+        const carro = {
+            modelo: 'Gol',
+            placa: 'HCN8019',
+            opcao: {
+                macha: 'Automatico',
+                pneu: '15'
+            },
+            "Outra-Coisa": "Tem que fazer o motor"
+        }
+        console.log(`${carro.modelo}, ${carro.placa}
+             ${carro.opcao.macha}, ${carro.opcao.pneu}
+             ${carro["Outra-coisa"]}`)
+
+        console.log(carro)
+    </script>
+</body>
+
+</html>

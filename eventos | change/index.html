@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=500, initial-scale=1.0">
+    <title>Eventos | Change</title>
+</head>
+
+<body>
+    <select name="" id="linguagens">
+        <option value="1">C</option>
+        <option value="2">C++</option>
+        <option value="3">Python</option>
+        <option value="4">Java</option>
+        <option value="5">JavaScript</option>
+        <option value="6">NodeJS</option>
+        <option value="7">ReactiveJS</option>
+        <option value="8">Reactive Native</option>
+        <option value="9">PHP</option>
+        <option value="10">C#</option>  
+    </select>
+
+    <script>
+        var linguagens = document.getElementById('linguagens')
+
+        linguagens.addEventListener('charge', function() {
+            var options = this.options
+            var itemAtual = this.selectedIndex
+
+            console.log(options[itemAtual].text)
+        })
+    </script>
+
+</body>
+
+</html>

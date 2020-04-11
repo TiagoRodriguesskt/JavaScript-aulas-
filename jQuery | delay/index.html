@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=500, initial-scale=1.0">
+    <title>jQuery | Delay</title>
+</head>
+
+<body>
+    <button>Click</button>
+    <div class="mensagem">Olá JavaScript</div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous" <script>
+        var button = $('button')
+        var mensagem = $('.mensagem')
+
+        button.on('click', function() {
+            mensagem.delay(3000).fadeOut()
+        })
+    </script>
+</body>
+
+</html>

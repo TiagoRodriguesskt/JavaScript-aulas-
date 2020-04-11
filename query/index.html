@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=500, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<!-- Buscando um id-->
+
+<body>
+
+    <div id="teste1">Deu certo 1</div>
+    <div class="teste2">Deu certo 2</div>
+    <p>Deu certo Teste 3</p>
+    <p class="teste4">Deu certo 4</p>
+
+    <script>
+        var teste1 = document.querySelector('#teste1')
+        var teste2 = document.querySelector('.teste2')
+        var teste3 = document.querySelector('p')
+        var teste4 = document.querySelector('p.teste4')
+
+        console.log(teste1.innerHTML)
+        console.log(teste2.innerHTML)
+        console.log(teste3.innerHTML)
+        console.log(teste4.innerHTML)
+    </script>
+
+</body>
+
+</html>

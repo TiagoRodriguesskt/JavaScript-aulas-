@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=500, initial-scale=1.0">
+    <title>Eventos | Hover</title>
+    <style>
+        tbody>tr {
+            background-color: #ccc;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        .link {
+            color: blue;
+        }
+        
+        .tractive {
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <!--TITULO-->
+    <a href="#" id="link">
+        <h1>Tudo bem humano?</h1>
+    </a>
+    <!--TABELA-->
+    <table style="width: 100%">
+        <thead>
+            <th align="height">Nome</th>
+            <th align="height">Idade</th>
+        </thead>
+        <tbody>
+            <tr class="tr">
+                <td style="height: 30px;">Bicho Papão</td>
+                <td style="height: 30px;">1000</td>
+            </tr>
+            <tr class="tr">
+                <td style="height: 30px;">Alien</td>
+                <td style="height: 30px;">2000</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        var link = document.getElementById('link')
+        var tr = document.getElementsByClassName('tr')
+            //LINK DO TITULO PARA MUDA DE COR
+        link.addEventListener('mouseover', function() {
+                link.classList.add('link')
+            })
+            //LINK DO TITULO PARA MUDA DE COR
+        link.addEventListener('mouseleave', function() {
+                link.classList.remove('link')
+            })
+            //LINK DA TABELA PARA MUDA DE COR
+        for (i = 0; i < tr < tr.length; i++) {
+            tr[i].addEventListener('mouseover', function(event) {
+                this.classList.add('tractive')
+            })
+
+            tr[i].addEventListener('mouseleave', function(event) {
+                this.classList.remove('tractive')
+            })
+        }
+    </script>
+</body>
+
+</html>

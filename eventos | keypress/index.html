@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=500, initial-scale=1.0">
+    <title>Eventos | Keypress</title>
+</head>
+
+<body>
+    <input type="text" id="text">
+    <div id="result" style="display:none">É o Enter ...</div>
+    <script>
+        var text = document.getElementById('text')
+        var result = document.getElementById('result')
+
+        text.addEventListener('keypress', function(evento) {
+            //console.log('Disparou', this.alue)
+            //console.log(evento.keyCode)
+            const KEYENTER = 13
+
+            if (evento.keyCode == KEYENTER) {
+                result.style.display = 'block'
+            }
+        })
+    </script>
+</body>
+
+</html>

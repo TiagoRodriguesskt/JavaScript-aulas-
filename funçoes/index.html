@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=500, initial-scale=1.0">
+    <title>Funções</title>
+</head>
+
+<body>
+    <script>
+        var pessoa = {
+            nome: 'Tiago',
+            idade: 33,
+            sexo: 'Masculino',
+            profissao: 'Programador'
+        }
+        console.log(pessoa.nome)
+        console.log(pessoa.idade)
+        console.log(pessoa.sexo)
+        console.log(pessoa.profissao)
+        console.log('')
+
+        function novaPessoa(novoObjetoPessoa) {
+            pessoa = novoObjetoPessoa
+        }
+        novaPessoa({
+            nome: 'Thiago',
+            idade: 30,
+            sexo: 'Masculino',
+            profissao: 'FullStack'
+        })
+        console.log(pessoa.nome)
+        console.log(pessoa.idade)
+        console.log(pessoa.sexo)
+        console.log(pessoa.profissao)
+    </script>
+</body>
+
+</html>

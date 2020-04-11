@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=500, initial-scale=1.0">
+    <title>for, forEach, map e while</title>
+</head>
+
+<body>
+    <script>
+        //1º Caso
+        var js = document.getElementsByClassName('js')
+
+        for (let i = 0; i < js.length; i++) {
+            let texto = js[i].innerHTML
+            js[i].innerHTML = 'Curso ' + texto + ' js'
+            console.log(js[i].innerHTML)
+        }
+
+        //2º Caso
+        var js = document.getElementsByClassName('js')
+
+        var array = [1, 2, 3, 4, 5]
+
+        //Aqui vai retorna os valores da array seu indice(posição)
+        array.forEach(function(a, i) {
+            console.log(a, i)
+            if (a, i === 1) {
+                array[i] = 'Outro'
+            }
+        })
+
+        console.log(array)
+
+        //3º Caso
+        var js = document.getElementsByClassName('js')
+
+        var array = [1, 2, 3, 4, 5]
+
+        //Aqui vai retorna os valores da array seu indice(posição)
+        var nova = array.map(function(a, i) {
+            console.log(a, i)
+            if (a, i === 1) {
+                array[i] = 'Outro'
+            }
+            return a, i
+        })
+
+        console.log(nova)
+
+        //4º Caso
+        var i = 0
+        while (i < 5) {
+            console.log('Oi')
+            i++
+        }
+    </script>
+
+</body>
+
+</html>
